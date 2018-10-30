@@ -17,7 +17,7 @@ describe('Buy a t-shirt', () => {
     await browser.get('http://automationpractice.com/');
   });
 
-  describe('when want to buy a T shirt', () => {
+  describe('When want to buy a T shirt', () => {
     beforeAll(async () => {
       const menuContentPage: MenuContentPage = new MenuContentPage();
       const productListPage: ProductListPage = new ProductListPage();
@@ -30,19 +30,19 @@ describe('Buy a t-shirt', () => {
       await summaryStepPage.proceedToCheckout();
     });
 
-    describe('and login to the application', () => {
+    describe('And login to the application', () => {
       beforeAll(async () => {
         const signInStepPage: SignInStepPage = new SignInStepPage();
         await signInStepPage.login('aperdomobo@gmail.com', 'WorkshopProtractor');
       });
 
-      describe('and select default address', () => {
+      describe('And select default address', () => {
         beforeAll(async () => {
           const addressStepPage: AddressStepPage = new AddressStepPage();
           await addressStepPage.proceedToCheckout();
         });
 
-        describe('and pay to the bank', () => {
+        describe('And pay to the bank', () => {
           beforeAll(async () => {
             const shippingStepPage: ShippingStepPage = new ShippingStepPage();
             const paymentStepPage: PaymentStepPage = new PaymentStepPage();
@@ -53,7 +53,7 @@ describe('Buy a t-shirt', () => {
             await bankPaymentPage.confirmOrder();
           });
 
-          it('then the order should be completed', async () => {
+          it('Then the order should be completed', async () => {
             const orderResumePage: OrderSummaryPage = new OrderSummaryPage();
 
             await expect(orderResumePage.getOrderTitle())
