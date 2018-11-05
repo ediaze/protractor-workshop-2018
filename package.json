@@ -31,12 +31,15 @@
   "homepage": "https://github.com/ediaze/protractor-workshop-2018#readme",
   "dependencies": {
     "protractor": "^5.4.1",
-    "travis": "^0.1.1"
+    "ruby": "^0.6.1"
   },
   "devDependencies": {
     "@types/jasminewd2": "^2.0.5",
+    "gem": "^2.4.3",
     "jasmine-awesome-report": "0.0.3",
     "jasmine-spec-reporter": "^4.2.1",
+    "travis": "^0.1.1",
+    "travis-ci": "^2.2.0",
     "tslint": "^5.11.0",
     "tslint-config-airbnb": "^5.11.0",
     "typescript": "^3.1.3"
