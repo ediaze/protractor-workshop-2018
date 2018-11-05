@@ -11,7 +11,7 @@
     "test:local": "npm run build && protractor dist/protractor/config.js",
     "test:headless": "npm run build && protractor dist/protractor/headless.config.js",
     "test:saucelabs": "npm run build && protractor dist/protractor/saucelabs.config.js",
-    "test":"npm run test:saucelabs"
+    "test": "npm run test:saucelabs"
   },
   "repository": {
     "type": "git",
@@ -30,7 +30,8 @@
   },
   "homepage": "https://github.com/ediaze/protractor-workshop-2018#readme",
   "dependencies": {
-    "protractor": "^5.4.1"
+    "protractor": "^5.4.1",
+    "travis": "^0.1.1"
   },
   "devDependencies": {
     "@types/jasminewd2": "^2.0.5",
