@@ -33,7 +33,7 @@ describe('Buy a t-shirt', () => {
     describe('And login to the application', () => {
       beforeAll(async () => {
         const signInStepPage: SignInStepPage = new SignInStepPage();
-        await signInStepPage.login('aperdomobo@gmail.com', 'WorkshopProtractor');
+        await signInStepPage.login('ediaze@gmail.com', 'WorkshopProtractor');
       });
 
       describe('And select default address', () => {
